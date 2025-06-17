@@ -1,0 +1,70 @@
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: pink;
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+}
+
+table,
+th,
+td {
+   border-collapse: collapse;
+   border: 1px solid black;
+}
+
+table,
+div.board {
+   width: 80vmin;
+   height: 80vmin;
+}
+
+th,
+td,
+div.tile {
+   text-align: center;
+}
+
+th {
+   font-size: 4vmin;
+}
+
+td,
+div.tile {
+   font-size: 4vmin;
+   cursor: pointer;
+   width: 15vmin;
+   height: 15vmin;
+   margin: 1px;
+   border-collapse: collapse;
+   border: 1px solid black;
+
+}
+
+td.blank,
+div.tile.blank {
+   background: grey;
+}
+
+td.has-mine,
+div.tile.has-mine {
+   background: red;
+}
+
+td.has-number,
+div.tile.has-number {
+   background: blue;
+}
+
+td.is-flagged,
+div.tile.is-flagged {
+   background: greenyellow;
+}
+
+div.board {
+   display: grid;
+   gap: 0px;
+}
